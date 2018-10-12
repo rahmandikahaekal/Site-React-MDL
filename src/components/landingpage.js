@@ -10,10 +10,10 @@ class Landing extends Component {
             <div style={{width: '100',height: '100',}}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
-                        <img
-                            src="https://www.w3schools.com/howto/img_avatar.png"
-                            alt="avatar"
+                        <img 
                             className="avatar-img"
+                            src="http://www.kluneo.com/static/avatar.svg"
+                            alt="Avatar Profile"
                         />
 
                         <div className="banner-text">
