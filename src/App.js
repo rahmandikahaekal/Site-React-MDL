@@ -8,19 +8,23 @@ class App extends Component {
   render() {
     return (
       <div className="demo-big-content">
-        <Layout>
-            <Header className="header-color" title="Title" scroll>
+        <Layout className="page-body">
+            <Header className="header-color" 
+                title={
+                    <Link style={{textDecoration: 'none', color: 'white'}} to="/">ReactDev</Link>
+                } scroll
+            > 
                 <Navigation>
-                    <Link to="/aboutme">AboutMe</Link>
                     <Link to="/resume">Resume</Link>
+                    <Link to="/aboutme">AboutMe</Link>
                     <Link to="/project">Project</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
             </Header>
             <Drawer title="Title">
                 <Navigation>
-                    <Link to="/aboutme">AboutMe</Link>
                     <Link to="/resume">Resume</Link>
+                    <Link to="/aboutme">AboutMe</Link>
                     <Link to="/project">Project</Link>
                     <Link to="/contact">Contact</Link>
                 </Navigation>
